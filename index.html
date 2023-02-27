@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/543aa776e3.js" crossorigin="anonymous"></script>
+    <title>web_Bumbálek</title>
+</head>
+<body>
+    <header class="main">
+        <ul>
+            <li>
+                <i class="fa-sharp fa-solid fa-phone"></i><a href="tel:+420777666666">+420 777 666 666</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i><a href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
+            </li>
+
+        </ul>
+        <ul>
+            <li>
+                <i class="fa-solid fa-circle-user"></i><a href="#">Přihlášení</a>
+            </li>
+        </ul>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
+            
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_2">Funkce</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_3">Podpora</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_4">Ceník</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_5">Kontakt</a>
+                </li>
+            </menu>
+            <script>
+                const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+                document.querySelector("body").onclick = (e) => {
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.add("navbar__menu--hidden");
+                    }
+                }
+                for (const btn of hamburgerButtons) {
+                    btn.onclick = (event) => {
+                        event.stopPropagation()
+                        const menus = document.querySelectorAll(".hamburger-menu-list");
+                        for (const menu of menus) {
+                            menu.classList.toggle("navbar__menu--hidden");
+                        }
+                    }
+                }
+            </script>
+    </header>
+    <main>
+        <section>
+            <div class="řízní školy"> 
+                <h1>Řízení školy ještě nebylo jednodušší</h1>
+                <li>
+                    <ul>
+
+                    </ul>
+                    <ul>
+                        
+                    </ul>
+                    <ul>
+                        
+                    </ul>
+                </li>
+            </div>
+            <a class="demo" href=""></a>
+            <a class="řízení_img" href=""><img src="" alt=""></a>
+
+        </section>
+        <section>
+            <div class="loga">
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+                <a href=""><img src="" alt=""></a>
+            </div>
+        </section>
+        <div class="Výhody">
+            <h2>Výhody řešení</h2>
+            <div class="výhody_img">
+                <div>
+                    <a href=""><img src="" alt=""></a> 
+                    <p></p>
+                </div>
+                <div>
+                    <a href=""><img src="" alt=""></a> 
+                    <p></p>
+                </div><div>
+                    <a href=""><img src="" alt=""></a> 
+                    <p></p>
+                </div>
+                <div>
+                    <a href=""><img src="" alt=""></a> 
+                    <p></p>
+                </div>
+            </div>
+            <div class="výhody_čára"> 
+                --
+            </div>
+            <article class="výhody_text">
+                <div>
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div>
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div>
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <div>
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </article>
+            <div class="výhody_button">
+                <p></p>
+            </div>
+        </div>
+        
+        <section>
+            <div class="Příběh">
+                <h2>
+
+                </h2>
+                <article>
+                    <h3></h3>
+                    <p></p>
+                    <div class="příběh_button"><a href=""><p></p></a></div>
+                </article>   
+                <a><img class="příběh_img" src="" alt=""></a> 
+            </div>
+        </section>
+        <section>
+            <div class="Napsali">
+                <h2> 
+
+                </h2>
+                <article>
+                    <a href=""><img src="" alt=""><p></p></a>
+                    <a href=""><img src="" alt=""><p></p></a>
+                    <a href=""><img src="" alt=""><p></p></a>
+                </article>
+                <div class="Napsali_button"><a href=""><p></p></a></div>
+            </div>
+        </section>
+        <article class="Aktuality">
+            <h2>
+
+            </h2>
+            <div class="Aktuality_text">
+                <img src="" alt="">
+                <p> 
+                    <h3>
+    
+                    </h3>
+                </p>
+            </div>
+            <div class="Aktuality_text">
+                <img src="" alt="">
+                <p> 
+                    <h3>
+    
+                    </h3>
+                </p>
+            </div>  
+           
+        </article>
+    </main>
+    <footer>
+        <div class="footer_logo">
+            <a href=""><img src="" alt=""><h3></h3></a>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="footer_Videotutoriáli">
+            <h3>
+
+            </h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="footer_podpora">
+            <h3>
+
+            </h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="footer_menu">
+            <h3>
+
+            </h3>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="footer_kontakt">
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""><img src="" alt=""></a>
+        </div>
+        <div class="footer_čára"> </div>
+        <div class="footer_nav">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </footer>
+</body>
+</html>
