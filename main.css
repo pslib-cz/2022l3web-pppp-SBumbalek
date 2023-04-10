@@ -1,0 +1,36 @@
+
+* {
+    list-style: none;
+}
+
+.header_upper {
+display: flex;
+justify-content: space-between;
+}
+
+.header_upper > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header_text{
+    display: none;
+}
+
+.navbar__menu {
+    transform-origin: top;
+    transform: scaleY(1);
+}
+
+.navbar__menu--hidden {
+    transform: scaleY(0);
+}
+
+.footer {
+    background-color: rgb(12, 12, 128);
+    color: rgb(97, 170, 235);
+    display: flex;
+    justify-content: space-between;
+}
+

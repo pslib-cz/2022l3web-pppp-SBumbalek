@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/543aa776e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./HamburgerCSSJS/Hamburger.css">
+    <link rel="stylesheet" href="main.css">
+    <title>web_Bumbálek</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <div class="header_upper">
+                <ul>
+                    <li><a href="tel:+420777666666"><i class="fa-solid fa-phone orange"></i><span class="header_text">+420 777 666 666</span></a></li>
+                    <li><a href="mailto:obchod@l3web.cz"><i class="fa-regular fa-envelope orange"></i><span class="header_text">obchod@l3web.cz</span></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header__text">Přihlášení</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar">
+            <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
+            <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav__item">
+                    <a class="nav__link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_2">Funkce</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_3">Podpora</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_4">Ceník</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section_5">Kontakt</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="btn btn-cta">Zkušební verze</a>
+                </li>
+            </menu>
+            <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"></a></div>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                    menu.classList.add("navbar__menu--hidden");
+                }
+            }
+            for (const btn of hamburgerButtons) {
+                btn.onclick = (event) => {
+                    event.stopPropagation()
+                    const menus = document.querySelectorAll(".hamburger-menu-list");
+                    for (const menu of menus) {
+                        menu.classList.toggle("navbar__menu--hidden");
+                    }
+                }
+            }
+        </script>
+    </header>
+    <main>
+        <h1>
+            Funkce
+        </h1>
+        <div class="Funkce_podtext">
+            <a href="#">Úvod</a>
+            <a href="#">Úvod</a>
+        </div>
+        <div>
+            <div class="Funkce_seznam">
+                <h2>Seznam funkcí aplikace</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quae officiis excepturi culpa, explicabo eligendi mollitia aperiam alias, facere optio ullam eaque veritatis repudiandae, quaerat nemo quo quod placeat. Dolores!</p>
+            </div>
+            <img src="./svgs/Play.svg" alt="">
+        </div>
+        <section class="Funkce_article">
+            <article>
+                <h3>Administrace aplikace</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+            <article>
+                <h3>Firemní procesy</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
+            </article>
+
+        </section>
+        <article class="Funkce_dotaz">
+            <h2>Máte dotaz k chování aplikace?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores, in, numquam laudantium minus tempora porro perspiciatis obcaecati eius ab minima, molestias veritatis optio? Incidunt ipsa obcaecati molestiae consequatur nam!</p>
+            <a href="emailto:podpora@l3web.cz">podpora@l3web.cz</a>
+            <a href="#">Napište nám e-mail</a>
+            <p>nebo</p>
+            <a href="#">Zavolejte nám</a>
+        </article>
+    </main>
+</body>

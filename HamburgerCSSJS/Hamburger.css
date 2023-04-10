@@ -1,23 +1,10 @@
-/* hamburger menu */
-
-@media (max-width: 768px) {
-    .navbar__menu--hidden {
-        display: none;
-    }
-}
-@media (min-width: 768px) {
-    .navbar__hamburger {
-        display: none;
-    }
-}
-
 .navbar {
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: space-between;
 }
-/* hamburger menu */
+
 .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -27,6 +14,8 @@
     font-size: 0.75em;
     text-decoration: none;
 }
+
 .hamburger-menu::after {
     content: url(./hamburger.svg);
+    z-index: 1;
 }
