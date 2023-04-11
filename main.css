@@ -1,11 +1,13 @@
 
 * {
     list-style: none;
+    color: #16213C;
 }
 
 .header_upper {
 display: flex;
 justify-content: space-between;
+background-color: #E7E7E7;
 }
 
 .header_upper > ul {
@@ -34,3 +36,57 @@ justify-content: space-between;
     justify-content: space-between;
 }
 
+.řízní_školy {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.řízní_školy > ul{
+    text-align: left;
+}
+
+.řízení_text {
+    color: #F5841F;
+}
+
+.řízení_img > img {
+    border-radius: 5px;
+    max-width: 100%;
+    width: 500px;
+}
+
+.řízení_button {
+    background-color: #F5841F;
+    padding: 8px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.loga {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.výhody_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.výhody_h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+.výhody_text {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.výhody_text > div {
+    background-color: grey;
+}
