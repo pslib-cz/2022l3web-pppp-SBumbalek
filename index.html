@@ -7,19 +7,21 @@
     <script src="https://kit.fontawesome.com/543aa776e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./HamburgerCSSJS/Hamburger.css">
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
     <title>web_Bumbálek</title>
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header_background">
             <div class="header_upper">
                 <ul>
                     <li><a href="tel:+420777666666"><i class="fa-solid fa-phone orange"></i><span class="header_text">+420 777 666 666</span></a></li>
                     <li><a href="mailto:obchod@l3web.cz"><i class="fa-regular fa-envelope orange"></i><span class="header_text">obchod@l3web.cz</span></a></li>
                 </ul>
                 <ul>
-                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header__text">Přihlášení</span></a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header_text">Přihlášení</span></a></li>
                 </ul>
             </div>
         </div>
@@ -30,7 +32,7 @@
                     <a class="nav__link" href="index.html">Úvod</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#section_2">Funkce</a>
+                    <a class="nav__link" href="funkce.html">Funkce</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#section_3">Podpora</a>
@@ -39,7 +41,7 @@
                     <a class="nav__link" href="#section_4">Ceník</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#section_5">Kontakt</a>
+                    <a class="nav__link" href="kontakt.html">Kontakt</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="btn btn-cta">Zkušební verze</a>
@@ -140,10 +142,10 @@
         </div>
         
         <section>
+            <h2 class="h2">
+                Příběh
+            </h2>
             <div class="Příběh">
-                <h2>
-                    Příběh
-                </h2>
                 <a><img class="příběh_img" src="./img/nonresident-JTW6AUbCLC4-unsplash.jpg" alt=""></a> 
                 <article>
                     <h3>Jsme dva - Honza a Tomáš</h3>
@@ -155,56 +157,65 @@
         </section>
         <section>
             <div class="Napsali">
-                <h2> 
-                    Napsali o nás
-                </h2>
-                <article>
-                    <div><img src="./img/svg/Ellipse 28.svg" alt=""></img></div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque, qui ut, rerum expedita enim dolor corporis itaque voluptatibus aliquid possimus quidem aspernatur sapiente quis adipisci tempora aliquam. Earum, debitis!</p>
-                        <p><strong>Michaela Komorousová</strong></p>
-                        <p><i>Personalista, Magna Exteriors s.r.o.</i></p>
-                    </div> 
-                </article>
-                <article>
-                    <div><img src="./img/svg/Ellipse 28 (1).svg" alt=""></img></div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque, qui ut, rerum expedita enim dolor corporis itaque voluptatibus aliquid possimus quidem aspernatur sapiente quis adipisci tempora aliquam. Earum, debitis!</p>
-                        <p><strong>Alžběta Formánková</strong></p>
-                        <p><i>Personalista, Magna Exteriors s.r.o.</i></p>
-                    </div> 
-                </article>
-                <article>
-                    <div><img src="./img/svg/Ellipse 28 (2).svg" alt=""></img></div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque, qui ut, rerum expedita enim dolor corporis itaque voluptatibus aliquid possimus quidem aspernatur sapiente quis adipisci tempora aliquam. Earum, debitis!</p>
-                        <p><strong>Anna Suchánková</strong></p>
-                        <p><i>Personalista, Magna Exteriors s.r.o.</i></p>
-                    </div> 
-                </article>
-                <a class="button" href="">Chci si přečíst víc</a>
+                <div>
+                    <h2> 
+                        Napsali o nás
+                    </h2>
+                </div>
+                <div class="Napsali_text">
+                    <article>
+                        <div><img src="./img/svg/Ellipse 28.svg" alt=""></img></div>
+                        <div>
+                            <p class="Napsali_minitext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque, qui ut, rerum expedita enim dolor corporis itaque voluptatibus aliquid possimus quidem aspernatur sapiente quis adipisci tempora aliquam. Earum, debitis!</p>
+                            <p><strong>Michaela Komorousová</strong></p>
+                            <p><i>Personalista, Magna Exteriors s.r.o.</i></p>
+                        </div> 
+                    </article>
+                    <article>
+                        <div><img src="./img/svg/Ellipse 28 (1).svg" alt=""></img></div>
+                        <div>
+                            <p class="Napsali_minitext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque, qui ut, rerum expedita enim dolor corporis itaque voluptatibus aliquid possimus quidem aspernatur sapiente quis adipisci tempora aliquam. Earum, debitis!</p>
+                            <p><strong>Alžběta Formánková</strong></p>
+                            <p><i>Personalista, Magna Exteriors s.r.o.</i></p>
+                        </div> 
+                    </article>
+                    <article>
+                        <div><img src="./img/svg/Ellipse 28 (2).svg" alt=""></img></div>
+                        <div>
+                            <p class="Napsali_minitext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eaque, qui ut, rerum expedita enim dolor corporis itaque voluptatibus aliquid possimus quidem aspernatur sapiente quis adipisci tempora aliquam. Earum, debitis!</p>
+                            <p><strong>Anna Suchánková</strong></p>
+                            <p><i>Personalista, Magna Exteriors s.r.o.</i></p>
+                        </div> 
+                    </article>
+                </div>
+                <div><a class="button" href="">Chci si přečíst víc</a></div>
             </div>
         </section>
-        <article class="Aktuality">
-            <h2>
+        <article class="Aktuality_bacground">
+            <div>
+                <h2 class="h2">
                 Aktuality
-            </h2>
-            <div class="Aktuality_text">
-                <h3>Přidán nový modul do administrace</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut nesciunt aperiam recusandae accusamus incidunt, beatae doloremque ab deleniti totam maiores delectus voluptatibus deserunt aliquid magnam officiis? Enim minus modi adipisci?</p>
-                <span>Přečíst celý článek</span>
+                </h2>
             </div>
-            <div class="Aktuality_text">
-                <h3>Přidán nový modul do administrace</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam ipsum, voluptatem perferendis officiis mollitia. Nulla corrupti necessitatibus officia saepe ipsum officiis, cumque accusantium, tempore labore dolorum natus? Optio, neque!</p>
-                <span>Přečíst celý článek</span>
+            <div class="Aktuality">
+                
+                <div class="Aktuality_text">
+                    <h3>Přidán nový modul do administrace</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut nesciunt aperiam recusandae accusamus incidunt, beatae doloremque ab deleniti totam maiores delectus voluptatibus deserunt aliquid magnam officiis? Enim minus modi adipisci?</p>
+                    <span>Přečíst celý článek</span>
+                </div>
+                <div class="Aktuality_text">
+                    <h3>Přidán nový modul do administrace</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam ipsum, voluptatem perferendis officiis mollitia. Nulla corrupti necessitatibus officia saepe ipsum officiis, cumque accusantium, tempore labore dolorum natus? Optio, neque!</p>
+                    <span>Přečíst celý článek</span>
+                </div>
+               
             </div>
-           
         </article>
     </main>
     <footer class="footer">
         <div class="footer_logo">
-            <a href=""><img src="./img/svg/Logo5.svg" alt=""></a>
+            <a href=""><img src="./img/svg/LogoFooter.png" alt=""></a>
             <p>Pslib.cz s.r.o</p>
             <p>Masarykova 12345</p>
             <p>460 00 Liberec</p>

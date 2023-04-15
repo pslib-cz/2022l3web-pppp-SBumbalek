@@ -7,29 +7,32 @@
     <script src="https://kit.fontawesome.com/543aa776e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./HamburgerCSSJS/Hamburger.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
     <title>web_Bumbálek</title>
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header_background">
             <div class="header_upper">
                 <ul>
                     <li><a href="tel:+420777666666"><i class="fa-solid fa-phone orange"></i><span class="header_text">+420 777 666 666</span></a></li>
                     <li><a href="mailto:obchod@l3web.cz"><i class="fa-regular fa-envelope orange"></i><span class="header_text">obchod@l3web.cz</span></a></li>
                 </ul>
                 <ul>
-                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header__text">Přihlášení</span></a></li>
+                    <li><a href="#"><i class="fa-regular fa-circle-user orange"></i><span class="header_text">Přihlášení</span></a></li>
                 </ul>
             </div>
         </div>
         <nav class="navbar">
-            <a href="./index.html" class="navbar__logo"><img src="./svgs/Logo5.svg  " alt="logo Ipsum" width="170" height="41"></a>
+            <a href="./index.html" class="navbar__logo"><img src="./img/svg/Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>
             <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
                 <li class="nav__item">
                     <a class="nav__link" href="index.html">Úvod</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#section_2">Funkce</a>
+                    <a class="nav__link" href="funkce.html">Funkce</a>
                 </li>
                 <li class="nav__item">
                     <a class="nav__link" href="#section_3">Podpora</a>
@@ -38,7 +41,7 @@
                     <a class="nav__link" href="#section_4">Ceník</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="#section_5">Kontakt</a>
+                    <a class="nav__link" href="kontakt.html">Kontakt</a>
                 </li>
                 <li class="nav__item">
                     <a href="#" class="btn btn-cta">Zkušební verze</a>
@@ -66,20 +69,25 @@
         </script>
     </header>
     <main>
-        <h1>
-            Funkce
-        </h1>
-        <div class="Funkce_podtext">
-            <a href="#">Úvod</a>
-            <a href="#">Úvod</a>
-        </div>
-        <div>
-            <div class="Funkce_seznam">
-                <h2>Seznam funkcí aplikace</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quae officiis excepturi culpa, explicabo eligendi mollitia aperiam alias, facere optio ullam eaque veritatis repudiandae, quaerat nemo quo quod placeat. Dolores!</p>
+        <section class="Funkce_top">
+            <h1>
+                Funkce
+            </h1>
+            <div class="Funkce_podtext">
+                <a href="#">Úvod</a>
+                <a>></a>
+                <a href="#">Funkce</a>
             </div>
-            <img src="./svgs/Play.svg" alt="">
-        </div>
+        </section>
+        <section class="Funkce_text">
+                <div>
+                    <div class="Funkce_seznam">
+                        <h2>Seznam funkcí aplikace</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex quae officiis excepturi culpa, explicabo eligendi mollitia aperiam alias, facere optio ullam eaque veritatis repudiandae, quaerat nemo quo quod placeat. Dolores!</p>
+                    </div>
+                    <img src="./img/svg/Frame 11.svg" alt="">
+                </div>
+        </section>
         <section class="Funkce_article">
             <article>
                 <h3>Administrace aplikace</h3>
@@ -129,19 +137,61 @@
                 <h3>Firemní procesy</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
             </article>
-            <article>
-                <h3>Firemní procesy</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos magni iste non ut sed natus sunt et, porro hic ullam. Labore quisquam in veniam sint numquam quaerat quidem suscipit ratione?</p>
-            </article>
 
         </section>
         <article class="Funkce_dotaz">
-            <h2>Máte dotaz k chování aplikace?</h2>
+            <h2>Máte dotaz <span>k chování aplikace?</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolores, in, numquam laudantium minus tempora porro perspiciatis obcaecati eius ab minima, molestias veritatis optio? Incidunt ipsa obcaecati molestiae consequatur nam!</p>
             <a href="emailto:podpora@l3web.cz">podpora@l3web.cz</a>
-            <a href="#">Napište nám e-mail</a>
+            <a class="button" href="#">Napište nám e-mail</a>
             <p>nebo</p>
-            <a href="#">Zavolejte nám</a>
+            <a class="button_outline" href="#">Zavolejte nám</a>
         </article>
+        <footer class="footer">
+            <div class="footer_logo">
+                <a href=""><img src="./img/svg/LogoFooter.png" alt=""></a>
+                <p>Pslib.cz s.r.o</p>
+                <p>Masarykova 12345</p>
+                <p>460 00 Liberec</p>
+                <p><i class=""></i>+420 777 666 666</p>
+                <p><i class=""></i>info@l3web.cz</p>
+            </div>
+            <div class="footer_Videotutoriáli">
+                <h3>
+                    Videotutoriály
+                </h3>
+                <p href="#">CSS</p>
+                <p href="#">Animace</p>
+                <p href="#">Stříhání videa</p>
+                <p href="#">Výběr barev</p>
+                <p href="#">Plánování pracovníků a mezd</p>
+                <p href="#">Všechna videa</p>
+            </div>
+            <div class="footer_podpora">
+                <h3>
+                    Podpora
+                </h3>
+                <p href="#">Přihlášení k účtu</p>
+                <p href="#">Školení</p>
+                <p href="#">FAQ - Časté dotazy</p>
+                <p href="#">Kontakty</p>
+                <p href="#">Videotutoriály</p>
+            </div>
+            <div class="footer_menu">
+                <h3>
+                    Menu
+                </h3>
+                <p href="#">Úvod</p>
+                <p href="#">Funkce</p>
+                <p href="#">Podpora</p>
+                <p href="#">Ceník</p>
+                <p href="#">Kontakt</p>
+            </div>
+            <div class="footer_čára"> </div>
+            <div class="footer_nav">
+                    <p>© Copyright 2023 - Pslib.cz s.r.o. | Cookies | Podmínky užití</p>
+                    <p>Vyrobilo: B interactive</p>
+            </div>
+        </footer>
     </main>
 </body>
